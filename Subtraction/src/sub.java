@@ -7,7 +7,7 @@ public class sub {
 		System.out.println("Enter the numbers: ");
 		int a = in.nextInt();
 		int b = in.nextInt();
-		System.out.println("Subtraction is :"+(a-b));
+		System.out.println("Subtraction is  :"+(a-b));
 		in.close();
 	}
 
