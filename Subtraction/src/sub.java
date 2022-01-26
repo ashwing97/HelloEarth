@@ -8,7 +8,7 @@ public class sub {
 		int a = in.nextInt();
 		int b = in.nextInt();
 		System.out.println("Subtraction is :"+(a-b));
-		
+		in.close();
 	}
 
 }

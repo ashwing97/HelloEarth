@@ -9,7 +9,7 @@ public class add {
 		a = myScanner.nextInt();
 		b = myScanner.nextInt();
 		System.out.println("Addition is :"+(a+b));
-
+		myScanner.close();
 	}
 
 	

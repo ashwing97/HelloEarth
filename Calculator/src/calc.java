@@ -28,6 +28,8 @@ public class calc {
 				break;
 		}
 		}while(option != 0);
+		
+		in.close();
 	}
 
 }
