@@ -8,6 +8,8 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JPasswordField;
+import javax.swing.JTextField;
 
 public class Library implements ActionListener{
 	
@@ -16,6 +18,8 @@ public class Library implements ActionListener{
 	JButton button;
 	JFrame frame;
 	JPanel panel;
+	JTextField username;
+	JPasswordField password;
 	
 	public Library() {
 		frame = new JFrame();
@@ -24,11 +28,15 @@ public class Library implements ActionListener{
 		button.addActionListener(this);
 		
 		label = new JLabel("Welcome to Library Mangement System");
+		username = new JTextField(1);
+		password = new JPasswordField(1);
 		
 		panel = new JPanel();
-		panel.setBorder(BorderFactory.createEmptyBorder(30,30,10,30));
-		panel.setLayout(new GridLayout(0,1));
+		panel.setBorder(BorderFactory.createEmptyBorder(10,10,10,10));
+		panel.setLayout(new GridLayout(5,6));
 		panel.add(label);
+		panel.add(username);
+		panel.add(password);
 		panel.add(button);
 		
 		
@@ -49,7 +57,7 @@ public class Library implements ActionListener{
 	public void actionPerformed(ActionEvent e) {
 		// TODO Auto-generated method stub
 		count++;
-		label.setText("");
+		//label.setText("");
 	}
 
 }
